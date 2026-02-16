@@ -1,4 +1,3 @@
-
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -739,16 +738,27 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Navbar (Mobile) */
+    /* Header and Navigation (Mobile) - Clean, Premium, Properly Aligned */
+    header {
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
     #navbar {
         flex-direction: column;
         padding: 0.75rem 1rem;
-        gap: 0.5rem;
+        gap: 0.25rem;
+    }
+
+    .logo {
+        justify-content: center;
     }
 
     .logo img {
-        width: 40px;
-        height: 40px;
+        max-height: 60px;
+        width: auto;
+        height: auto;
     }
 
     .logo h1 {
@@ -757,44 +767,50 @@ footer p {
 
     .nav-links {
         flex-direction: column;
-        gap: 1rem;
-        margin: 0.75rem 0;
+        gap: 0.5rem;
+        margin: 0.5rem 0;
         width: 100%;
         text-align: center;
     }
 
     .nav-links a {
-        padding: 0.5rem 0;
+        padding: 0.4rem 0;
         display: block;
+        font-size: 16px;
     }
 
     .book-now-btn {
-        width: 100%;
-        max-width: 200px;
+        width: 70%;
+        max-width: none;
         text-align: center;
-        padding: 0.75rem 1rem;
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
     }
 
-    /* Hero Section (Mobile) */
+    /* Hero Section (Mobile) - 90vh, Proper Sizing */
+    #hero {
+        height: 90vh;
+    }
+
     .hero-text {
-        padding: 1.5rem 20px;
+        padding: 0 20px;
     }
 
     .hero-text h2 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-        margin-bottom: 0.75rem;
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 0.5rem;
     }
 
     .hero-text p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .cta-btn {
-        padding: 1rem 2rem;
-        font-size: 1rem;
+        padding: 0.85rem 2rem;
+        font-size: 0.95rem;
     }
 
     /* Buttons (Mobile) */
@@ -834,14 +850,14 @@ footer p {
         height: 200px;
     }
 
-    /* Sections (Mobile) */
+    /* Sections (Mobile) - Reduced Vertical Spacing */
     section {
-        padding: 3rem 0;
+        padding: 2.5rem 0;
     }
 
     section h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
     }
 
     .container {
@@ -851,7 +867,7 @@ footer p {
     /* Rooms Grid (Mobile) */
     .rooms-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .room-card {
@@ -876,18 +892,18 @@ footer p {
     /* Restaurant (Mobile) */
     .restaurant-features {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin: 2rem 0;
+        gap: 1.25rem;
+        margin: 1.5rem 0;
     }
 
     /* Amenities (Mobile) */
     .amenities-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem;
     }
 
     .amenity {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
     }
 
     /* Gallery (Mobile) */
@@ -898,19 +914,19 @@ footer p {
 
     /* Testimonials (Mobile) */
     .testimonial {
-        padding: 2rem 1.5rem;
+        padding: 1.5rem 1rem;
         margin: 1rem 0;
     }
 
     /* Contact (Mobile) */
     .contact-info {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
-        margin-bottom: 2rem;
+        gap: 1.25rem;
+        margin-bottom: 1.5rem;
     }
 
     .contact-info div {
-        padding: 1.5rem;
+        padding: 1.25rem;
     }
 
     .contact-form {
@@ -942,7 +958,7 @@ footer p {
     /* Footer (Mobile) */
     .footer-content {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
         text-align: center;
     }
 
