@@ -208,3 +208,33 @@ document.querySelectorAll('section').forEach(section => {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
 });
+
+// ===============================
+// Mobile Hamburger Menu Toggle
+// ===============================
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+
+    if (hamburger && navLinks) {
+
+        hamburger.addEventListener("click", function () {
+            hamburger.classList.toggle("active");
+            navLinks.classList.toggle("active");
+            document.body.classList.toggle("menu-open");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", function () {
+                hamburger.classList.remove("active");
+                navLinks.classList.remove("active");
+                document.body.classList.remove("menu-open");
+            });
+        });
+
+    }
+
+});
+
